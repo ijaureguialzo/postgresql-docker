@@ -19,14 +19,14 @@ services:
       retries: 3
 
   pgadmin:
-    image: dpage/pgadmin4
+    image: dpage/pgadmin4:${PGADMIN_VERSION}
     environment:
       - PGADMIN_DEFAULT_EMAIL=${PGADMIN_EMAIL}
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_PASSWORD}
     volumes:
       - pgadmin_data:/var/lib/pgadmin
     ports:
-      - "80:80"
+      - "8090:80"
     depends_on:
       - postgresql
 
