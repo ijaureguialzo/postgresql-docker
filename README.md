@@ -1,14 +1,3 @@
 # postgresql-docker
 
-```
- ___________________________ 
-/ If there is no wind, row. \
-|                           |
-\ -- Polish proverb         /
- --------------------------- 
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
+Servidor de base de datos PostgreSQL en un contenedor Docker.
