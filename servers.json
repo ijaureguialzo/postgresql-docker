@@ -7,7 +7,7 @@
             "Username": "test",
             "Host": "postgresql",
             "SSLMode": "prefer",
-            "MaintenanceDB": "test"
+            "MaintenanceDB": "postgres"
         }
     }
 }
