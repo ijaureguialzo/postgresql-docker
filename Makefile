@@ -40,10 +40,10 @@ stop:
 restart: stop start
 
 workspace:
-	@docker compose exec postgresql /bin/bash
+	@docker compose exec -u postgres pgserver /bin/bash
 
 logs:
-	@docker compose logs postgresql
+	@docker compose logs pgserver
 
 stats:
 	@docker stats
