@@ -1,7 +1,11 @@
 services:
 
   pgserver:
-    image: postgres:${POSTGRES_VERSION}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - POSTGRES_VERSION=${POSTGRES_VERSION}
     hostname: pgserver
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
