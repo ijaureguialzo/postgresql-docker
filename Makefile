@@ -13,6 +13,7 @@ help: _header
 	@echo ----------------------
 	@echo start / stop / restart
 	@echo workspace
+	@echo update
 	@echo logs
 	@echo stats
 	@echo clean
@@ -41,6 +42,10 @@ restart: stop start
 
 workspace:
 	@docker compose exec -u postgres pgserver /bin/bash
+
+update:
+	@docker compose pull
+	@docker compose build
 
 logs:
 	@docker compose logs pgserver
